@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="sidebar" [class.active]="isSidebarOpen">
+        <ul>
+            <li><a (click)="toRoot()">Home</a></li>
+
+            <li><a (click)="goto('accordion')">Accordion Content</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+
+        <router-outlet></router-outlet>
+    </div>
+</div>
