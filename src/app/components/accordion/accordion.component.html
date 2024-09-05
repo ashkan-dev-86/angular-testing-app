@@ -1,0 +1,39 @@
+<div class="progress-container">
+    <label for="blow-progress">You have 15 seconds to check accordions</label>
+
+    <progress id="blow-progress" [value]="progress" max="100">{{progress}}%</progress>
+</div>
+
+<!-- <ng-container *ngIf="progress < 100"> -->
+<details *ngIf="progress < 100">
+    <summary contenteditable="true">Weather Forecast Overview</summary>
+
+    <blockquote title="Weather Forecast Overview">Stay informed about the latest weather conditions. This section
+        provides a detailed breakdown of the temperature,
+        humidity, wind speed, and more for your location. Check here for daily or weekly forecasts.</blockquote>
+</details>
+
+<details>
+    <summary contenteditable="true">Hourly Temperature Updates</summary>
+
+    <blockquote title="Hourly Temperature Updates">Track the temperature changes every hour. This information helps
+        you plan your day, ensuring you're prepared for
+        any sudden weather shifts.</blockquote>
+</details>
+
+<details>
+    <summary contenteditable="true">Severe Weather Alerts</summary>
+
+    <blockquote title="Severe Weather Alerts">Get instant notifications on severe weather conditions such as
+        thunderstorms, heavy rain, or extreme heat. Keep
+        an eye on this section for important safety information.</blockquote>
+</details>
+
+<details>
+    <summary contenteditable="true">UV Index and Air Quality</summary>
+
+    <blockquote title="UV Index and Air Quality">Stay aware of the UV index and air quality in your area to protect
+        your health. These updates are especially
+        useful for outdoor activities and those with respiratory conditions.</blockquote>
+</details>
+<!-- </ng-container> -->
