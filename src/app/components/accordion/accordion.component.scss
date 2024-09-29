@@ -7,6 +7,29 @@ summary {
     color: cornflowerblue;
 }
 
+.explanation-container {
+    animation: explode 0.6s ease-in-out forwards;
+    transform-origin: center;
+    will-change: transform, opacity;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
 progress {
     margin-left: 10px;
 }

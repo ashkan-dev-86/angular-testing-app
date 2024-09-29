@@ -19,7 +19,7 @@ export class AccordionComponent {
   private progressTheSeconds(): void {
     setInterval(() => {
       if (this.progress < 100) {
-        this.progress += this.step;
+        this.progress = Math.ceil(this.progress + this.step);
         this.changeDetector.detectChanges();
       }
     }, 1000);
