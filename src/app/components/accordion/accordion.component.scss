@@ -11,6 +11,7 @@ summary {
     animation: explode 0.6s ease-in-out forwards;
     transform-origin: center;
     will-change: transform, opacity;
+    display: inline;
 }
 
 @keyframes explode {

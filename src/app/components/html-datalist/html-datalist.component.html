@@ -1,0 +1,5 @@
+<input type="text" list="browsers" name="browser" id="browser" (change)="datalistChange($event)">
+
+<datalist id="browsers">
+  <option *ngFor="let item of datalist" [value]="item">
+</datalist>

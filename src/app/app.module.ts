@@ -5,13 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { CommonModule } from '@angular/common';
-import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    AccordionComponent
+    LayoutComponent
   ],
   imports: [
     CommonModule,
