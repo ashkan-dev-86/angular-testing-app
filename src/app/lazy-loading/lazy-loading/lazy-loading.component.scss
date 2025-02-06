@@ -1,0 +1,60 @@
+.container {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+
+    .content {
+        min-height: 1500px;
+        background: linear-gradient(180deg, #f0f0f0 0%, #e0e0e0 100%);
+        padding: 20px;
+
+        .title {
+            margin: 0;
+            padding-bottom: 20px;
+        }
+    }
+
+    .content-block {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+
+        &.section-1 {
+            height: 200px;
+        }
+
+        &.section-2 {
+            height: 300px;
+        }
+
+        &.section-3 {
+            height: 400px;
+        }
+
+        &.section-4 {
+            height: 300px;
+            margin-bottom: 0;
+        }
+    }
+
+    .image-container {
+        text-align: center;
+        margin-top: 50px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+
+            &.loaded {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -14,6 +14,10 @@ const routes: Routes = [
       {
         path: 'datalist',
         loadChildren: () => import('./components/html-datalist/html-datalist.module').then(m => m.HtmlDatalistModule)
+      },
+      {
+        path: 'lazy-layout',
+        loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule)
       }
     ]
   }
